@@ -1082,6 +1082,7 @@ GameObject:
   - component: {fileID: 2090191105}
   - component: {fileID: 2090191104}
   - component: {fileID: 2090191103}
+  - component: {fileID: 2090191107}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1170,6 +1171,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2090191107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090191102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae6f7948e32ba743bcb2ae93bb1f2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSceneName: PlayChoose
+  creditsMenu: {fileID: 0}
 --- !u!1001 &8961459186485308324
 PrefabInstance:
   m_ObjectHideFlags: 0
