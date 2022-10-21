@@ -764,10 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9665931d72ed2d84982c78a46811cdec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wavesTimeouts:
-  - 5
-  - 10
-  - 15
+  wavesTimeouts: []
 --- !u!114 &731577275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,6 +1742,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
+      propertyPath: endlessWave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
+      propertyPath: unitSpawnDelay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
 --- !u!4 &1261761695 stripped
@@ -2483,6 +2488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e513e6f9800134b48a01029e0962f5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitSceneName: 
   startScreen: {fileID: 0}
   pauseMenu: {fileID: 0}
   defeatMenu: {fileID: 0}
@@ -2674,12 +2680,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
+      propertyPath: endlessWave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
       propertyPath: unitSpawnDelay
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
       propertyPath: waves.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5969955296611476955, guid: 6f309ce9338ce154eb01081e25436726, type: 3}
       propertyPath: waves.Array.data[0].enemies.Array.size
