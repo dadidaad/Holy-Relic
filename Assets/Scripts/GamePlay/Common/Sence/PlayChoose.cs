@@ -107,7 +107,14 @@ public class PlayChoose : MonoBehaviour
 	/// </summary>
 	private void GoToLevel()
 	{
-		SceneManager.LoadScene(currentLevel.name);
+		if (currentLevel.name == "ProgressInfo")
+		{
+			SceneManager.LoadScene("DemoSence");
+		}
+		else
+		{
+			SceneManager.LoadScene(currentLevel.name);
+		}
 	}
 
 	private void ButtonPressed(GameObject obj, string param)

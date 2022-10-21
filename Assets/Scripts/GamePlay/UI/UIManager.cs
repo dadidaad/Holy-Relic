@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     // This scene will loaded after whis level exit
-    //public string exitSceneName;
+    public string exitSceneName;
     // Start screen canvas
     public GameObject startScreen;
     // Pause menu canvas
@@ -180,10 +180,10 @@ public class UIManager : MonoBehaviour
     /// <summary>
     /// Gos to main menu.
     /// </summary>
-	//private void ExitFromLevel()
- //   {
- //       LoadScene(exitSceneName);
- //   }
+	private void ExitFromLevel()
+    {
+        LoadScene(exitSceneName);
+    }
 
     /// <summary>
     /// Closes all UI canvases.
@@ -387,7 +387,7 @@ public class UIManager : MonoBehaviour
                 GoToLevel();
                 break;
             case "Back":
-                //ExitFromLevel();
+                ExitFromLevel();
                 break;
             case "Restart":
                 RestartLevel();

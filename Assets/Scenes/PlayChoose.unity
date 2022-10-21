@@ -214,6 +214,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105923381}
   m_CullTransparentMesh: 1
+--- !u!1 &157370154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3217108486494124667, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+  m_PrefabInstance: {fileID: 3319073921728594061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &171352527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,7 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitSceneName: MainMenu
   levelFolder: {fileID: 1002473142}
-  currentLevel: {fileID: 0}
+  currentLevel: {fileID: 157370154}
   levelsPrefabs: []
 --- !u!114 &550226305
 MonoBehaviour:
