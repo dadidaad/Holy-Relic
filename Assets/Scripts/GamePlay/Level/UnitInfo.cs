@@ -9,4 +9,11 @@ public class UnitInfo : MonoBehaviour
     public string primaryText;
     public Sprite secondaryIcon;
     public string secondaryText;
+
+    [HideInInspector]
+    public decimal level = 1;
+
+
+    //For Tower
+    public List<BulletArrow> bulletArrows;
 }

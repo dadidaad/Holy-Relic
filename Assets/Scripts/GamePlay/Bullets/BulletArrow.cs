@@ -64,6 +64,7 @@ public class BulletArrow : MonoBehaviour, IBullet
     /// <param name="target">Target.</param>
     public void Fire(Transform target)
     {
+        var info = target.GetComponentInChildren<UnitInfo>();
         sprite = GetComponent<SpriteRenderer>();
         // Disable sprite on first frame beqause we do not know fly direction yet
         sprite.enabled = false;
