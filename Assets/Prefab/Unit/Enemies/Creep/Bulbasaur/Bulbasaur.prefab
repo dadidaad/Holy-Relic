@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 1442461052924433456}
   - component: {fileID: 3139388570466544470}
   - component: {fileID: 4227740431013316443}
+  - component: {fileID: -7745577056579007025}
   m_Layer: 8
   m_Name: Bulbasaur
   m_TagString: Enemies
@@ -408,6 +409,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 3
+--- !u!114 &-7745577056579007025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7277689410633239529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb36ff0fcb849b41bef238aab1cf517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7478022508535666420
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,3 +496,4 @@ MonoBehaviour:
   primaryText: 
   secondaryIcon: {fileID: 0}
   secondaryText: 
+  bulletArrows: []
