@@ -93,7 +93,6 @@ public class UIManager : MonoBehaviour
                 pointerData.position = Input.mousePosition;
                 List<RaycastResult> results = new List<RaycastResult>();
                 EventSystem.current.RaycastAll(pointerData, results);
-                Debug.Log(results.Count);
                 if (results.Count > 0) // UI components on pointer
                 {
                     // Search for Action Icon hit in results

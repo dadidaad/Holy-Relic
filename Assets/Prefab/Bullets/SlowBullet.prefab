@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4152414638288561205}
   - component: {fileID: 7535342697501092321}
   - component: {fileID: 4912960135636421688}
+  - component: {fileID: 2071370383292962315}
   m_Layer: 11
   m_Name: SlowBullet
   m_TagString: Bullet
@@ -125,3 +126,22 @@ MonoBehaviour:
   sfx: {fileID: 0}
   tags:
   - Enemies
+--- !u!114 &2071370383292962315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b639930923e654c870f141427641da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aoeDamageRate: 2
+  radius: 0.3
+  explosion: {fileID: 0}
+  explosionDuration: 1
+  sfx: {fileID: 0}
+  tags:
+  - Flying

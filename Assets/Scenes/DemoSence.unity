@@ -791,11 +791,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelUiSceneName: LevelUI
   goldAmount: 25
-  defeatAttempts: 1
+  defeatAttempts: 50
   allowedEnemies:
   - {fileID: 7277689410633239529, guid: 016367b852589b74988146954f1f2509, type: 3}
+  - {fileID: 7277689410633239529, guid: 80d1173c6d6717b42a4812bdfe7492e9, type: 3}
+  - {fileID: 8953099516059627349, guid: 43210c45132af5343ad7dd506b660bf9, type: 3}
+  - {fileID: 8953099516059627349, guid: 9c2900b03541b954aa1e091a01b33d97, type: 3}
+  - {fileID: 7277689410633239529, guid: cd56c35f3c229334bb938818b04d590a, type: 3}
+  - {fileID: 928293904487387602, guid: a4a4fcc18e7ee034e81b33b73b002ffb, type: 3}
+  - {fileID: 7277689410633239529, guid: fb2433fdf7870114797bb24514f4a88a, type: 3}
   allowedTowers:
   - {fileID: 5253704690272930596, guid: 5704f9e0915b4fc49a14c0a2c67537f2, type: 3}
+  - {fileID: 5253704690272930596, guid: 737f7d7844c5f00479b33642e7fb99f5, type: 3}
   allowedSpells: []
 --- !u!114 &731577277
 MonoBehaviour:

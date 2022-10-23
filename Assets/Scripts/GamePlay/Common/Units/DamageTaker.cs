@@ -28,12 +28,16 @@ public class DamageTaker : MonoBehaviour
 	// Original width of health bar (full hp)
 	private float originHealthBarWidth;
 
+	[HideInInspector]
+	public float halfPoint;
+
 	/// <summary>
 	/// Awake this instance.
 	/// </summary>
 	void Awake()
 	{
 		currentHitpoints = hitpoints;
+		halfPoint = hitpoints / 2;
 		sprite = GetComponentInChildren<SpriteRenderer>();
 		Debug.Assert(sprite && healthBar, "Wrong initial parameters");
 	}

@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 5336531789013206710}
   - component: {fileID: 6237157564252507410}
   m_Layer: 9
-  m_Name: KingDra
+  m_Name: Magnezone
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1040,7 +1040,7 @@ Transform:
   m_GameObject: {fileID: 8408095689363822204}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.05, y: 0.37, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 4437689030658454952}
   m_Father: {fileID: 8591621459424187827}
@@ -1086,7 +1086,7 @@ SpriteRenderer:
   m_SortingLayerID: -626457525
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c559f84510bc87e469a0396dfbd6a13e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca635a90c7692304e972c03730b4ed3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   damage: 3
   cooldown: 2
   fireDelay: 0
-  arrowPrefab: {fileID: 847933439783408654, guid: 0ad3275af81e66548b30b8a0dfb76f0a, type: 3}
+  arrowPrefab: {fileID: 532996538095813643, guid: 8b8cf58ff04c9f54dbe31dc91a175cf1, type: 3}
   firePoint: {fileID: 4437689030658454952}
 --- !u!114 &5203931699138519729
 MonoBehaviour:
@@ -1284,4 +1284,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - Enemies
+  - Flying
