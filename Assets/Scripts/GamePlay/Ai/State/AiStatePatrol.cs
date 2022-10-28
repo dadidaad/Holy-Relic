@@ -12,11 +12,11 @@ public class AiStatePatrol : AiState
     [HideInInspector]
     // Current destination
     public Waypoint destination;
-    public override void Awake()
+/*    public override void Awake()
     {
         base.Awake();
         Debug.Assert(aiBehavior.navAgent, "Wrong initial parameters");
-    }
+    }*/
     public override void OnStateEnter(AiState previousState, AiState newState)
     {
         if (path == null)

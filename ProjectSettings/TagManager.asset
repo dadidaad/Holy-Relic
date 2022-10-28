@@ -14,6 +14,11 @@ TagManager:
   - Bullet
   - LevelUI
   - Flying
+  - BuffSpeed
+  - BuffHp
+  - Revise
+  - Rider
+  - Boss
   layers:
   - Default
   - TransparentFX

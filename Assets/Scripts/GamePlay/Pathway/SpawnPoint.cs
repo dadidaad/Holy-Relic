@@ -62,13 +62,17 @@ public class SpawnPoint : MonoBehaviour
             {
                 currentWave += 1;
                 Debug.Log("Wave: " + currentWave + " - Enemy: " + enemyInWave * 2);
+                int random = Random.Range(0, 3);
                 for (int i = 0; i < enemyInWave; i++)
                 {
                     GameObject prefab = null;
                     // If enemy prefab not specified - spawn random enemy
                     if (randomEnemiesList.Count > 0)
                     {
-                        prefab = randomEnemiesList[Random.Range(0, randomEnemiesList.Count)];
+                        if (currentWave < 10)
+                            prefab = EnemySelection(currentWave, 0);
+                        else
+                            prefab = EnemySelection(currentWave, random);
                     }
                     else
                     {
@@ -95,13 +99,12 @@ public class SpawnPoint : MonoBehaviour
                     {
                         speed += 0.05f;
                     }
-                    agent.speed = Random.Range(agent.speed * (1f - speed), agent.speed * (1f + speed));
                     // Add enemy to list
                     activeEnemies.Add(newEnemy);
                     // Wait for delay before next enemy run
                     yield return new WaitForSeconds(unitSpawnDelay);
                 }
-                if (currentWave % 2 == 0)
+                if (currentWave % 3 == 0)
                     enemyInWave += 1;
             }
         }
@@ -179,5 +182,29 @@ public class SpawnPoint : MonoBehaviour
     void OnDestroy()
     {
         StopAllCoroutines();
+    }
+
+    private GameObject EnemySelection(int currentWave, int regularEnemy)
+    {
+        if (currentWave % 20 == 0 && currentWave > 19 && GameObject.FindWithTag("Boss") == null)
+        {
+            return randomEnemiesList[6];
+        }
+        else if (currentWave % 7 == 0 && currentWave > 14)
+        {
+            return randomEnemiesList[5];
+        }
+        else if (currentWave % 3 == 0 && currentWave > 8 && GameObject.FindWithTag("BuffHp") == null)
+        {
+            return randomEnemiesList[4];
+        }
+        else if (currentWave % 4 == 0 && currentWave > 11 && GameObject.FindWithTag("BuffSpeed") == null)
+        {
+            return randomEnemiesList[3];
+        }
+        else
+        {
+            return randomEnemiesList[regularEnemy];
+        }
     }
 }

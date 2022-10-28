@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5287884196954996440}
   m_Layer: 8
   m_Name: Feature
-  m_TagString: Untagged
+  m_TagString: BuffHp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,6 +532,7 @@ MonoBehaviour:
   damageDisplayTime: 0.4
   healthBar: {fileID: 2644464983080521882}
   isTrigger: 0
+  halfPoint: 0
 --- !u!114 &9089140663609897869
 MonoBehaviour:
   m_ObjectHideFlags: 0

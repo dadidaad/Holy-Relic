@@ -359,7 +359,7 @@ public class UIManager : MonoBehaviour
 	private void UnitKilled(GameObject obj, string param)
     {
         // If this is enemy
-        if (obj.CompareTag("Enemies") || obj.CompareTag("FlyingEnemy"))
+        if (obj.CompareTag("Enemies") || obj.CompareTag("Flying"))
         {
             Price price = obj.GetComponent<Price>();
             if (price != null)
