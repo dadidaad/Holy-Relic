@@ -15,7 +15,7 @@ public class AttackRanged : Attack
 	// Animation controller for this AI
 	//private Animator anim;
 	// Counter for cooldown calculation
-	private float cooldownCounter;
+	protected float cooldownCounter;
 
 	/// <summary>
 	/// Awake this instance.
@@ -51,7 +51,7 @@ public class AttackRanged : Attack
 		}
 	}
 
-	private IEnumerator FireCoroutine(Transform target, GameObject bulletPrefab)
+	protected virtual IEnumerator FireCoroutine(Transform target, GameObject bulletPrefab)
 	{
 		if (target != null && bulletPrefab != null)
 		{

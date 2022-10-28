@@ -116,8 +116,13 @@ public class BulletArrow : MonoBehaviour, IBullet
                 }
             }
             // Destroy bullet
-            Destroy(gameObject);
+            StartCoroutine(DieCoroutine());
         }
+    }
+    protected virtual IEnumerator DieCoroutine()
+    {
+        yield return true;
+        Destroy(gameObject);
     }
 
     /// <summary>

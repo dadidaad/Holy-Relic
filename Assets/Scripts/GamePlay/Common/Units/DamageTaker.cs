@@ -112,7 +112,7 @@ public class DamageTaker : MonoBehaviour
 		StartCoroutine(DieCoroutine());
 	}
 
-	private IEnumerator DieCoroutine()
+	protected virtual IEnumerator DieCoroutine()
 	{
 		//if (dieSfx != null && AudioManager.instance != null)
 		//{

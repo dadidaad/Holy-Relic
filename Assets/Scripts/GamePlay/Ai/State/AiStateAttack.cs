@@ -175,7 +175,7 @@ public class AiStateAttack : AiState
                         if (aiBehavior.navAgent != null)
                         {
                             // Look at target
-                            aiBehavior.navAgent.LookAt(target.transform);
+                            //aiBehavior.navAgent.LookAt(target.transform);
                         }
                         // Remember my last attack type
                         myLastAttack = meleeAttack as Attack;
@@ -195,7 +195,7 @@ public class AiStateAttack : AiState
                             if (aiBehavior.navAgent != null)
                             {
                                 // Look at target
-                                aiBehavior.navAgent.LookAt(target.transform);
+                                //aiBehavior.navAgent.LookAt(target.transform);
                             }
                             // Remember my last attack type
                             myLastAttack = rangedAttack as Attack;

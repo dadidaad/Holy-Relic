@@ -136,6 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5567377034575470948}
   - component: {fileID: 2535766658956339676}
+  - component: {fileID: 3803729047810726134}
   m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
@@ -197,7 +198,7 @@ SpriteRenderer:
   m_SortingLayerID: -626457525
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7f6dbc17abb90144ca0a40842af2f7b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a304f55eb7d1fa04bb8f34a3b6baad43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -208,6 +209,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3803729047810726134
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6293207463947245312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d46729764104e048bdd316ef88e9f54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6981311357673049498
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,10 +273,10 @@ GameObject:
   - component: {fileID: 4342345988913841482}
   - component: {fileID: 3089459128116891923}
   - component: {fileID: -6212884257857491360}
-  - component: {fileID: 1442461052924433456}
   - component: {fileID: 3139388570466544470}
   - component: {fileID: 4227740431013316443}
   - component: {fileID: -7745577056579007025}
+  - component: {fileID: 6286940957712791314}
   m_Layer: 8
   m_Name: Bulbasaur
   m_TagString: Enemies
@@ -364,23 +384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
   defaultState: {fileID: 3139388570466544470}
---- !u!114 &1442461052924433456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7277689410633239529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoints: 2
-  currentHitpoints: 0
-  damageDisplayTime: 0.4
-  healthBar: {fileID: 7684050507494629941}
-  isTrigger: 0
 --- !u!114 &3139388570466544470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +424,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb36ff0fcb849b41bef238aab1cf517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6286940957712791314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7277689410633239529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cbc375494bed843b7deb19d44d05c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoints: 1
+  currentHitpoints: 0
+  damageDisplayTime: 0.2
+  healthBar: {fileID: 7684050507494629941}
+  isTrigger: 0
+  halfPoint: 0
 --- !u!1 &7478022508535666420
 GameObject:
   m_ObjectHideFlags: 0
