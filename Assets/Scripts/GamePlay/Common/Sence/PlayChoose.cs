@@ -37,52 +37,52 @@ public class PlayChoose : MonoBehaviour
 
 	void Start()
 	{
-		int hitIdx = -1;
-		int levelsCount = DataManager.instance.progress.openedLevels.Count;
-		if (levelsCount > 0)
-		{
-			// Get name of last opened level from stored data
-			string openedLevelName = DataManager.instance.progress.openedLevels[levelsCount - 1];
+		//int hitIdx = -1;
+		//int levelsCount = DataManager.instance.progress.openedLevels.Count;
+		//if (levelsCount > 0)
+		//{
+		//	// Get name of last opened level from stored data
+		//	string openedLevelName = DataManager.instance.progress.openedLevels[levelsCount - 1];
 
-			int idx;
-			for (idx = 0; idx < levelsPrefabs.Count; ++idx)
-			{
-				// Try to find last opened level in levels list
-				if (levelsPrefabs[idx].name == openedLevelName)
-				{
-					hitIdx = idx;
-					break;
-				}
-			}
-		}
-		// Level found
-		if (hitIdx >= 0)
-		{
-			if (levelsPrefabs.Count > hitIdx + 1)
-			{
-				maxActiveLevelIdx = hitIdx + 1;
-			}
-			else
-			{
-				maxActiveLevelIdx = hitIdx;
-			}
-		}
-		// level does not found
-		else
-		{
-			if (levelsPrefabs.Count > 0)
-			{
-				maxActiveLevelIdx = 0;
-			}
-			else
-			{
-				Debug.LogError("Have no levels prefabs!");
-			}
-		}
-		if (maxActiveLevelIdx >= 0)
-		{
-			DisplayLevel(maxActiveLevelIdx);
-		}
+		//	int idx;
+		//	for (idx = 0; idx < levelsPrefabs.Count; ++idx)
+		//	{
+		//		// Try to find last opened level in levels list
+		//		if (levelsPrefabs[idx].name == openedLevelName)
+		//		{
+		//			hitIdx = idx;
+		//			break;
+		//		}
+		//	}
+		//}
+		//// Level found
+		//if (hitIdx >= 0)
+		//{
+		//	if (levelsPrefabs.Count > hitIdx + 1)
+		//	{
+		//		maxActiveLevelIdx = hitIdx + 1;
+		//	}
+		//	else
+		//	{
+		//		maxActiveLevelIdx = hitIdx;
+		//	}
+		//}
+		//// level does not found
+		//else
+		//{
+		//	if (levelsPrefabs.Count > 0)
+		//	{
+		//		maxActiveLevelIdx = 0;
+		//	}
+		//	else
+		//	{
+		//		Debug.LogError("Have no levels prefabs!");
+		//	}
+		//}
+		//if (maxActiveLevelIdx >= 0)
+		//{
+		//	DisplayLevel(maxActiveLevelIdx);
+		//}
 	}
 	private void DisplayLevel(int levelIdx)
 	{

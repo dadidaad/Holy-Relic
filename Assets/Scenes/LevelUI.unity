@@ -2041,6 +2041,7 @@ MonoBehaviour:
   goldAmount: {fileID: 1896261707}
   defeatAttempts: {fileID: 1814437942}
   menuDisplayDelay: 1
+  waveText: {fileID: 131450571}
 --- !u!4 &1074405142
 Transform:
   m_ObjectHideFlags: 0

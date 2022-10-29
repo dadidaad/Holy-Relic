@@ -85,7 +85,7 @@ public class LevelManager : MonoBehaviour
         if (beforeLooseCounter > 0)
         {
             beforeLooseCounter--;
-            //uiManager.SetDefeatAttempts(beforeLooseCounter);
+            uiManager.SetDefeatAttempts(beforeLooseCounter);
             if (beforeLooseCounter <= 0)
             {
                 triggered = true;

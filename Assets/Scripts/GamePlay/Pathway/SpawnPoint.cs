@@ -24,6 +24,7 @@ public class SpawnPoint : MonoBehaviour
     private Pathway path;
     private List<GameObject> activeEnemies = new List<GameObject>();
     private bool finished = false;
+    private UIManager uiManager;
 
     void Awake()
     {
@@ -42,7 +43,10 @@ public class SpawnPoint : MonoBehaviour
         EventManager.StopListening("EnemiesDie", EnemiesDie);
         EventManager.StopListening("WaveStart", WaveStart);
     }
-
+    private void Start()
+    {
+        uiManager = FindObjectOfType<UIManager>();
+    }
     private void EnemiesDie(GameObject obj, string param)
     {
         // If this is active enemy
@@ -61,6 +65,7 @@ public class SpawnPoint : MonoBehaviour
             while (true)
             {
                 currentWave += 1;
+                uiManager.setWaveText(currentWave);
                 Debug.Log("Wave: " + currentWave + " - Enemy: " + enemyInWave * 2);
                 int random = Random.Range(0, 3);
                 for (int i = 0; i < enemyInWave; i++)

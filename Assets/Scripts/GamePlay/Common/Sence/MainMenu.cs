@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
 
 	void Awake()
 	{
-		Debug.Assert(creditsMenu, "Wrong initial settings");
+		//Debug.Assert(creditsMenu, "Wrong initial settings");
 	}
 
 	/// <summary>

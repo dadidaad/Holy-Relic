@@ -28,6 +28,7 @@ public class UIManager : MonoBehaviour
     public Text defeatAttempts;
     // Victory and defeat menu display delay
     public float menuDisplayDelay = 1f;
+    public Text waveText;
 
     // Is game paused?
     private bool paused;
@@ -370,6 +371,10 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void setWaveText(int wave)
+    {
+        waveText.text = wave.ToString();
+    }
     /// <summary>
     /// Buttons pressed handler.
     /// </summary>
