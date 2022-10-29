@@ -194,11 +194,11 @@ public class SpawnPoint : MonoBehaviour
         {
             return randomEnemiesList[5];
         }
-        else if (currentWave % 3 == 0 && currentWave > 8 && GameObject.FindWithTag("BuffHp") == null)
+        else if (currentWave % 3 == 0 && currentWave > 5 && GameObject.FindWithTag("BuffHp") == null)
         {
             return randomEnemiesList[4];
         }
-        else if (currentWave % 4 == 0 && currentWave > 11 && GameObject.FindWithTag("BuffSpeed") == null)
+        else if (currentWave % 4 == 0 && currentWave > 7 && GameObject.FindWithTag("BuffSpeed") == null)
         {
             return randomEnemiesList[3];
         }
