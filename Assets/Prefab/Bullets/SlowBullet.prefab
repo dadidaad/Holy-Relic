@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4912960135636421688}
   - component: {fileID: 2071370383292962315}
   - component: {fileID: 1339006404228384679}
+  - component: {fileID: 7840905178323117020}
   m_Layer: 11
   m_Name: SlowBullet
   m_TagString: Bullet
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Speed
   modifier: -0.5
-  duration: 4
+  duration: 2.5
   radius: 0.5
   explosionFx: {fileID: 0}
   explosionFxDuration: 1
@@ -143,5 +144,24 @@ MonoBehaviour:
   speedUpOverTime: 0.2
   hitDistance: 0.1
   ballisticOffset: 0.4
-  freezeRotation: 0
-  aoeDamageOnly: 0
+  freezeRotation: 1
+  aoeDamageOnly: 1
+--- !u!95 &7840905178323117020
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe9dffa3c00d1e34a96e8c10195410f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

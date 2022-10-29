@@ -115,6 +115,19 @@ public class BulletArrow : MonoBehaviour, IBullet
                     }
                 }
             }
+            Animator anim = GetComponent<Animator>();
+            if (anim != null && anim.runtimeAnimatorController != null)
+            {
+                // Search for clip
+                foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
+                {
+                    if (clip.name == "Crash")
+                    {
+                        // Play animation
+                        anim.SetTrigger("crash");
+                    }
+                }
+            }
             // Destroy bullet
             Destroy(gameObject);
         }

@@ -57,8 +57,11 @@ public class Effect : MonoBehaviour
 			}
 			else // Already have same effect
 			{
-				// Add it to current list
-				hit.effects.Add(modifier, Time.time + duration);
+				if (!hit.effects.ContainsKey(modifier))
+				{
+					// Add it to current list
+					hit.effects.Add(modifier, Time.time + duration);
+				}
 				// One more modifier added to existing effect
 				methodInfo.Invoke(this, new object[] { EffectTrigger.NewModifier, modifier });
 			}
