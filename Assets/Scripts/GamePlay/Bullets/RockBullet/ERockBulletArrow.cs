@@ -15,9 +15,9 @@ public class ERockBulletArrow : BulletArrow
             //	 Search for clip
             foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
             {
-                if (clip.name.Equals("RockCrash"))
+                if (clip.name.Equals("Crash"))
                 {
-                    print("clip name is RockCrash");
+                    print("clip name is Crash");
                     //Play animation
                     anim.SetTrigger("isCrash");
                     print("Clip length: " + clip.length);

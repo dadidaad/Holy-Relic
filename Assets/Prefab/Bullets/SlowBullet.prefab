@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7900305966681868683}
   - component: {fileID: 4152414638288561205}
-  - component: {fileID: 7535342697501092321}
   - component: {fileID: 4912960135636421688}
   - component: {fileID: 2071370383292962315}
+  - component: {fileID: 1718921273214238513}
+  - component: {fileID: 1339006404228384679}
   m_Layer: 11
   m_Name: SlowBullet
   m_TagString: Bullet
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532996538095813643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalPosition: {x: -0.0102, y: 0.0152, z: 0}
+  m_LocalScale: {x: 1.0387483, y: 1.0472835, z: 0.03}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -115087363
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b67657adae8fb6b4c8c39f529bf03db3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2050b56b843943041a79c0127f057d20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,25 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7535342697501092321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532996538095813643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58a4fa98c002324d9d4f7502482118e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 5
-  speed: 1.7
-  speedUpOverTime: 0.2
-  hitDistance: 0.1
-  ballisticOffset: 0.4
-  freezeRotation: 1
-  aoeDamageOnly: 1
 --- !u!114 &4912960135636421688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +127,41 @@ MonoBehaviour:
   sfx: {fileID: 0}
   tags:
   - Flying
+--- !u!95 &1718921273214238513
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe9dffa3c00d1e34a96e8c10195410f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1339006404228384679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58a4fa98c002324d9d4f7502482118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
+  speed: 1.7
+  speedUpOverTime: 0.2
+  hitDistance: 0.1
+  ballisticOffset: 0.4
+  freezeRotation: 0
+  aoeDamageOnly: 0
