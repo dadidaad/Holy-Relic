@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 241044953602312429}
   - component: {fileID: 5042610929137511600}
   - component: {fileID: 1026712754607629404}
+  - component: {fileID: 5559660306316721484}
   m_Layer: 11
   m_Name: StuningBombAlly
   m_TagString: Bullet
@@ -146,3 +147,22 @@ MonoBehaviour:
   tags:
   - Enemies
   - Flying
+--- !u!95 &5559660306316721484
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880316796880832434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac6078493fb4c674aadfb70369c26818, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
