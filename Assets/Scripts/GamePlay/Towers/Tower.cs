@@ -14,6 +14,7 @@ public class Tower : MonoBehaviour
 
     // User interface manager
     private UIManager uiManager;
+    private int level;
 
     /// <summary>
     /// Raises the enable event.
@@ -84,6 +85,34 @@ public class Tower : MonoBehaviour
             // Destroy old tower
             Destroy(gameObject);
             EventManager.InvokeEvent("TowerBuild", newTower, null);
+        }
+    }
+
+    /// <summary>
+    /// Upgrade the tower.
+    /// </summary>
+    /// <param name="towerPrefab">Tower prefab.</param>
+    public void UpgradeTower(GameObject towerPrefab, int level)
+    {
+        // Close active actions tree
+        CloseActions();
+        Price price = towerPrefab.GetComponent<Price>();
+        // If anough gold
+        if (uiManager.SpendGold(price.price) == true)
+        {
+            // Create new tower and place it on same position
+            GameObject newTower = Instantiate<GameObject>(towerPrefab, transform.parent);
+            newTower.name = towerPrefab.name;
+            newTower.transform.position = transform.position;
+            newTower.transform.rotation = transform.rotation;
+            newTower.GetComponent<Tower>().level = level;
+            Debug.Log(newTower.GetComponent<Tower>().level);
+            
+            AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
+            ar.damage += (level * 3);
+            // Destroy old tower
+            Destroy(gameObject);
+            EventManager.InvokeEvent("UpgradeBuild", newTower, null);
         }
     }
 
