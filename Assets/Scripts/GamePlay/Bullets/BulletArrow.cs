@@ -115,22 +115,43 @@ public class BulletArrow : MonoBehaviour, IBullet
                     }
                 }
             }
-            Animator anim = GetComponent<Animator>();
-            if (anim != null && anim.runtimeAnimatorController != null)
+            //Animator anim = GetComponent<Animator>();
+            //if (anim != null && anim.runtimeAnimatorController != null)
+            //{
+            //    // Search for clip
+            //    foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
+            //    {
+            //        if (clip.name == "Crash")
+            //        {
+            //            // Play animation
+            //            anim.SetTrigger("crash");
+            //        }
+            //    }
+            //}
+            StartCoroutine(DieCoroutine());
+        }
+    }
+
+    private IEnumerator DieCoroutine()
+    {
+        Animator anim = GetComponentInChildren<Animator>();
+        // If unit has animator
+        if (anim != null && anim.runtimeAnimatorController != null)
+        {
+            // Search for clip
+            foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
             {
-                // Search for clip
-                foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
+                if (clip.name == "Crash")
                 {
-                    if (clip.name == "Crash")
-                    {
-                        // Play animation
-                        anim.SetTrigger("crash");
-                    }
+                    // Play animation
+                    anim.SetTrigger("crash");
+                    yield return new WaitForSeconds(clip.length);
+                    break;
                 }
             }
-            // Destroy bullet
-            Destroy(gameObject);
         }
+        yield return true;
+        Destroy(gameObject);
     }
 
     /// <summary>

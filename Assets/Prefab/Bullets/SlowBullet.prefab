@@ -127,6 +127,7 @@ MonoBehaviour:
   sfx: {fileID: 0}
   tags:
   - Flying
+  - Enemies
 --- !u!114 &1339006404228384679
 MonoBehaviour:
   m_ObjectHideFlags: 0
