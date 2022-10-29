@@ -22,8 +22,8 @@ public class DataVersion
 public class GameProgressData
 {
 	public System.DateTime saveTime = DateTime.MinValue;    // Saving time
-	public string lastCompetedLevel = "";                   // Name of level was last completed
-	public List<string> openedLevels = new List<string>();  // List with levels available to play
+	public int currentWave;
+	public int enemiesInWave;
 }
 
 /// <summary>

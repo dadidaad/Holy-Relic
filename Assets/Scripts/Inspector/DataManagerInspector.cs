@@ -35,11 +35,11 @@ public class DataManagerInspector : MonoBehaviour
 	/// <param name="levelName">Level name.</param>
 	public void PermitLevel(string levelName)
 	{
-		if (dataManager.progress.openedLevels.Contains(levelName) == false)
-		{
-			dataManager.progress.openedLevels.Add(levelName);
-			dataManager.SaveGameProgress();
-		}
+		//if (dataManager.progress.openedLevels.Contains(levelName) == false)
+		//{
+		//	dataManager.progress.openedLevels.Add(levelName);
+		//	dataManager.SaveGameProgress();
+		//}
 	}
 }
 #endif

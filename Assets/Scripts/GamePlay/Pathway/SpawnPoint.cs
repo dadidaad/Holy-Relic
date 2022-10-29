@@ -62,10 +62,21 @@ public class SpawnPoint : MonoBehaviour
         {
             int enemyInWave = 3;
             int currentWave = 0;
+            if(DataManager.instance.progress.currentWave != 0)
+            {
+                currentWave = DataManager.instance.progress.currentWave;
+                enemyInWave = DataManager.instance.progress.enemiesInWave;
+            }
             while (true)
             {
                 currentWave += 1;
-                uiManager.setWaveText(currentWave);
+                if (this.GetComponentInParent<Pathway>().name == "Pathway")
+                {
+                    DataManager.instance.progress.currentWave = currentWave-1;
+                    DataManager.instance.progress.enemiesInWave = enemyInWave;
+                    uiManager.setWaveText(currentWave);
+                }
+                
                 Debug.Log("Wave: " + currentWave + " - Enemy: " + enemyInWave * 2);
                 int random = Random.Range(0, 3);
                 for (int i = 0; i < enemyInWave; i++)
@@ -167,11 +178,19 @@ public class SpawnPoint : MonoBehaviour
         }
 
     }
-    private void WaveStart(GameObject obj, string param)
+    internal void WaveStart(GameObject obj, string param)
     {
         int waveNumber;
         int.TryParse(param, out waveNumber);
-        StartCoroutine("RunWave", waveNumber);
+        Pathway path1 = GetComponentInParent<Pathway>();
+        if (path1.name == "Pathway" && param == "0")
+        {
+            StartCoroutine("RunWave", waveNumber);
+        }
+        if (path1.name != "Pathway" && param == "continue")
+        {
+            StartCoroutine("RunWave", waveNumber);
+        }
     }
 
     void Update()

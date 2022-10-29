@@ -262,31 +262,32 @@ public class UIManager : MonoBehaviour
     /// <returns>The coroutine.</returns>
     private IEnumerator VictoryCoroutine()
     {
-        yield return new WaitForSeconds(menuDisplayDelay);
-        PauseGame(true);
-        CloseAllUI();
+        //yield return new WaitForSeconds(menuDisplayDelay);
+        //PauseGame(true);
+        //CloseAllUI();
 
-        // --- Game progress autosaving ---
-        // Get the name of completed level
-        DataManager.instance.progress.lastCompetedLevel = SceneManager.GetActiveScene().name;
-        // Check if this level have no completed before
-        bool hit = false;
-        foreach (string level in DataManager.instance.progress.openedLevels)
-        {
-            if (level == SceneManager.GetActiveScene().name)
-            {
-                hit = true;
-                break;
-            }
-        }
-        if (hit == false)
-        {
-            DataManager.instance.progress.openedLevels.Add(SceneManager.GetActiveScene().name);
-        }
-        // Save game progress
-        DataManager.instance.SaveGameProgress();
+        //// --- Game progress autosaving ---
+        //// Get the name of completed level
+        //DataManager.instance.progress.lastCompetedLevel = SceneManager.GetActiveScene().name;
+        //// Check if this level have no completed before
+        //bool hit = false;
+        //foreach (string level in DataManager.instance.progress.openedLevels)
+        //{
+        //    if (level == SceneManager.GetActiveScene().name)
+        //    {
+        //        hit = true;
+        //        break;
+        //    }
+        //}
+        //if (hit == false)
+        //{
+        //    DataManager.instance.progress.openedLevels.Add(SceneManager.GetActiveScene().name);
+        //}
+        //// Save game progress
+        //DataManager.instance.SaveGameProgress();
 
-        //victoryMenu.SetActive(true);
+        ////victoryMenu.SetActive(true);
+        yield return true;
     }
 
     /// <summary>
