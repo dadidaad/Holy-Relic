@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7478035795618887207}
   - component: {fileID: 1964561136276897370}
-  - component: {fileID: 7946630381531678728}
-  - component: {fileID: 7912099332970673331}
+  - component: {fileID: -2242342586176544532}
   m_Layer: 11
   m_Name: WaterBullet
   m_TagString: Bullet
@@ -84,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7946630381531678728
+--- !u!114 &-2242342586176544532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +92,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 847933439783408654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92c9defdf4f611745ab5aabb9b7410e6, type: 3}
+  m_Script: {fileID: 11500000, guid: e58a4fa98c002324d9d4f7502482118e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 5
@@ -101,24 +100,5 @@ MonoBehaviour:
   speedUpOverTime: 0.5
   hitDistance: 0.2
   ballisticOffset: 0.5
-  freezeRotation: 0
+  freezeRotation: 1
   aoeDamageOnly: 0
---- !u!95 &7912099332970673331
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847933439783408654}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b9798efc983185d4eafd9a73316a4129, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
