@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5567377034575470948}
   - component: {fileID: 2535766658956339676}
-  - component: {fileID: 3803729047810726134}
+  - component: {fileID: 12662657938881361}
   m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
@@ -209,7 +209,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3803729047810726134
+--- !u!95 &12662657938881361
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 3139388570466544470}
   - component: {fileID: 4227740431013316443}
   - component: {fileID: -7745577056579007025}
-  - component: {fileID: 6286940957712791314}
+  - component: {fileID: -8742603795318726203}
   m_Layer: 8
   m_Name: Bulbasaur
   m_TagString: Enemies
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb36ff0fcb849b41bef238aab1cf517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6286940957712791314
+--- !u!114 &-8742603795318726203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,10 +433,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7277689410633239529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7cbc375494bed843b7deb19d44d05c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
+  hitpoints: 3
   currentHitpoints: 0
   damageDisplayTime: 0.2
   healthBar: {fileID: 7684050507494629941}

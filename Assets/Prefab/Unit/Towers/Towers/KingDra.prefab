@@ -225,7 +225,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12216629, y: 0.54974836}
+  m_Offset: {x: 0.122166276, y: -0.13432945}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -236,7 +236,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8667278, y: 1.3664986}
+  m_Size: {x: 0.8667278, y: 0.91044664}
   m_EdgeRadius: 0
 --- !u!114 &4913447521262442292
 MonoBehaviour:
@@ -358,11 +358,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5140304040770308758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.088, y: -0.352, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.04845593, y: -0.3345054, z: 0}
+  m_LocalScale: {x: 1.7946643, y: 1.7698697, z: 6.666666}
   m_Children: []
-  m_Father: {fileID: 8591621459424187827}
+  m_Father: {fileID: 5230169728031704893}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2911975166359391613
@@ -1009,7 +1009,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5230169728031704893}
-  - {fileID: 2472207725699038088}
   m_Father: {fileID: 9031295917467818862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1044,6 +1043,7 @@ Transform:
   m_LocalScale: {x: 0.5572073, y: 0.56501335, z: 0.15}
   m_Children:
   - {fileID: 4437689030658454952}
+  - {fileID: 2472207725699038088}
   m_Father: {fileID: 8591621459424187827}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1236,7 +1236,7 @@ GameObject:
   - component: {fileID: 7762533607170507977}
   - component: {fileID: 1348693463162441243}
   - component: {fileID: 5203931699138519729}
-  - component: {fileID: 3279583318936244445}
+  - component: {fileID: 2887473110866354041}
   m_Layer: 10
   m_Name: RangedAttack
   m_TagString: AttackRadius
@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Enemies
---- !u!114 &3279583318936244445
+--- !u!114 &2887473110866354041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1297,12 +1297,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9008236832870997913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa0efab594fa3644af8bdb441334037, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bb677e5802056b488e14c99bcc1b8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  cooldown: 0
+  damage: 2
+  cooldown: 1
   fireDelay: 0
   arrowPrefab: {fileID: 847933439783408654, guid: 0ad3275af81e66548b30b8a0dfb76f0a, type: 3}
   firePoint: {fileID: 4437689030658454952}
-  body: {fileID: 5230169728031704893}

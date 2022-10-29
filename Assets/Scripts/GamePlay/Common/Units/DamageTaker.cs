@@ -124,24 +124,24 @@ public class DamageTaker : MonoBehaviour
 		}
 		GetComponent<AiBehavior>().enabled = false;
 		GetComponent<NavAgent>().enabled = false;
-		//GetComponent<EffectControl>().enabled = false;
-		//Animator anim = GetComponent<Animator>();
-		//// If unit has animator
-		//if (anim != null && anim.runtimeAnimatorController != null)
-		//{
-		//	// Search for clip
-		//	foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
-		//	{
-		//		if (clip.name == "Die")
-		//		{
-		//			// Play animation
-		//			anim.SetTrigger("die");
-		//			yield return new WaitForSeconds(clip.length);
-		//			break;
-		//		}
-		//	}
-		//}
-		yield return true;
+        GetComponent<Effect>().enabled = false;
+        Animator anim = GetComponentInChildren<Animator>();
+        // If unit has animator
+        if (anim != null && anim.runtimeAnimatorController != null)
+        {
+            // Search for clip
+            foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
+            {
+                if (clip.name == "Die")
+                {
+                    // Play animation
+                    anim.SetTrigger("die");
+                    yield return new WaitForSeconds(clip.length);
+                    break;
+                }
+            }
+        }
+        yield return true;
 		Destroy(gameObject);
 	}
 
