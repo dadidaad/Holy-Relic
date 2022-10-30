@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,6 +65,13 @@ public class LevelManager : MonoBehaviour
         }
         Debug.Assert(uiManager, "Wrong initial parameters");
         // Set gold amount for this level
+        string dataGold = DataManager.instance.progress.gold;
+        string dataDefeatAttempts = DataManager.instance.progress.defeatAttempts;
+        if(dataGold != "" && dataDefeatAttempts != "")
+        {
+            goldAmount = Convert.ToInt32(dataGold);
+            defeatAttempts = Convert.ToInt32(dataDefeatAttempts);
+        }
         uiManager.SetGold(goldAmount);
         beforeLooseCounter = defeatAttempts;
         uiManager.SetDefeatAttempts(beforeLooseCounter);

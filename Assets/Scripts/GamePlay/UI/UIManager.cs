@@ -182,6 +182,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
 	private void ExitFromLevel()
     {
+        DataManager.instance.SaveGameProgress();
         LoadScene(exitSceneName);
     }
 

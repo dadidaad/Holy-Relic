@@ -19,6 +19,12 @@ TagManager:
   - Revise
   - Rider
   - Boss
+  - Place1
+  - Place2
+  - Place3
+  - Place4
+  - Place5
+  - Place6
   layers:
   - Default
   - TransparentFX
