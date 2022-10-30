@@ -12,7 +12,7 @@ public class BuildingPlace : MonoBehaviour
         if (towerInfor != null)
         {
             Tower tower = GetComponentInChildren<Tower>();
-            tower.LoadSaveTower("KingDra");
+            tower.LoadSaveTower(towerInfor.name);
         }
     }
 }

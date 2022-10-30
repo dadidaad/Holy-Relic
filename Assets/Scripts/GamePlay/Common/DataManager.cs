@@ -9,16 +9,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 /// Version of saved data format. Use it to check if stored data format is equal to actual data format
 /// </summary>
 [Serializable]
-public class DataVersion
-{
-	public int major = 1;
-	public int minor = 0;
-}
-[Serializable]
 public class TowerInfor
 {
 	public string tag;
 	public int level;
+	public string name;
 }
 
 /// <summary>
@@ -60,12 +55,8 @@ public class DataManager : MonoBehaviour
 	// Game configurations container
 	public GameConfigurations configs = new GameConfigurations();
 
-	// Data version container
-	private DataVersion dataVersion = new DataVersion();
-	// Name of file with data version
-	private string dataVersionFile = "/DataVersion.dat";
 	// Name of file with game progress data
-	private string gameProgressFile = "/GameProgress.dat";
+	public string gameProgressFile = "/GameProgress.dat";
 	// Name of file with game configurations
 	private string gameConfigsFile = "/GameConfigs.dat";
 
@@ -79,7 +70,6 @@ public class DataManager : MonoBehaviour
 			instance = this;
 			DontDestroyOnLoad(gameObject);
 
-			UpdateDataVersion();
 			LoadGameProgress();
 			LoadGameConfigs();
 		}
@@ -101,31 +91,6 @@ public class DataManager : MonoBehaviour
 		}
 	}
 
-	/// <summary>
-	/// Updates the version of data format.
-	/// </summary>
-	private void UpdateDataVersion()
-	{
-		if (File.Exists(Application.persistentDataPath + dataVersionFile) == true)
-		{
-			BinaryFormatter bfOpen = new BinaryFormatter();
-			FileStream fileToOpen = File.Open(Application.persistentDataPath + dataVersionFile, FileMode.Open);
-			DataVersion version = (DataVersion)bfOpen.Deserialize(fileToOpen);
-			fileToOpen.Close();
-
-			switch (version.major)
-			{
-				case 1:
-					// Stored data has version 1.x
-					// Some handler to convert data if it is needed ...
-					break;
-			}
-		}
-		BinaryFormatter bfCreate = new BinaryFormatter();
-		FileStream fileToCreate = File.Create(Application.persistentDataPath + dataVersionFile);
-		bfCreate.Serialize(fileToCreate, dataVersion);
-		fileToCreate.Close();
-	}
 
 	/// <summary>
 	/// Delete file with saved game data. For debug only

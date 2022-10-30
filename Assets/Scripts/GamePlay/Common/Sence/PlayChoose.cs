@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -117,6 +118,27 @@ public class PlayChoose : MonoBehaviour
 		}
 	}
 
+	private void NewGame()
+	{
+		if (File.Exists(Application.persistentDataPath + DataManager.instance.gameProgressFile) == true)
+		{
+			File.Delete(Application.persistentDataPath + DataManager.instance.gameProgressFile);
+			DataManager.instance.progress.currentWave = 0;
+			DataManager.instance.progress.enemiesInWave = 3;
+			DataManager.instance.progress.defeatAttempts = "";
+			DataManager.instance.progress.gold = "";
+			DataManager.instance.progress.towerInfors = new List<TowerInfor>();
+		}
+		if (currentLevel.name == "ProgressInfo")
+		{
+			SceneManager.LoadScene("DemoSence");
+		}
+		else
+		{
+			SceneManager.LoadScene(currentLevel.name);
+		}
+	}
+
 	private void ButtonPressed(GameObject obj, string param)
 	{
 		switch (param)
@@ -126,6 +148,9 @@ public class PlayChoose : MonoBehaviour
 				break;
 			case "Exit":
 				Exit();
+				break;
+			case "NewGame":
+				NewGame();
 				break;
 		}
 	}

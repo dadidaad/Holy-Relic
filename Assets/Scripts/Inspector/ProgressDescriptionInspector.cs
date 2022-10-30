@@ -17,4 +17,8 @@ public class ProgressDescriptionInspector : MonoBehaviour
 	{
 		Debug.Assert(mapImage && heading && saveInfo && current, "Wrong level description stuff settings");
 	}
+    private void Start()
+    {
+		current.text = "Wave" + DataManager.instance.progress.currentWave.ToString();
+    }
 }

@@ -1817,6 +1817,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.data[0]
+      value: 
+      objectReference: {fileID: 5253704690272930596, guid: 737f7d7844c5f00479b33642e7fb99f5, type: 3}
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.data[1]
+      value: 
+      objectReference: {fileID: 5253704690272930596, guid: 5704f9e0915b4fc49a14c0a2c67537f2, type: 3}
     - target: {fileID: 3445480160698062003, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6406,6 +6418,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.data[0]
+      value: 
+      objectReference: {fileID: 5253704690272930596, guid: 5704f9e0915b4fc49a14c0a2c67537f2, type: 3}
+    - target: {fileID: 1869977476285157426, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
+      propertyPath: prefabsTower.Array.data[1]
+      value: 
+      objectReference: {fileID: 5253704690272930596, guid: 737f7d7844c5f00479b33642e7fb99f5, type: 3}
     - target: {fileID: 3445480160698062003, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
       propertyPath: m_RootOrder
       value: 1

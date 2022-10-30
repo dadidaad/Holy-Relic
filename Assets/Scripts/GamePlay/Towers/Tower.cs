@@ -96,6 +96,7 @@ public class Tower : MonoBehaviour
                 temp = new TowerInfor();
                 temp.tag = parent.tag;
                 temp.level = 1;
+                temp.name = newTower.name;
                 DataManager.instance.progress.towerInfors.Add(temp);
             }
             newTower.tag = parent.tag;
@@ -114,7 +115,7 @@ public class Tower : MonoBehaviour
         if (data != null)
         {
             GameObject newTower = Instantiate<GameObject>(prefabsTower.FirstOrDefault(e => e.name == preFab), transform.parent);
-            newTower.name = prefabsTower.FirstOrDefault(e => e.name == "KingDra").name;
+            newTower.name = prefabsTower.FirstOrDefault(e => e.name == preFab).name;
             newTower.transform.position = transform.position;
             newTower.transform.rotation = transform.rotation;
             newTower.GetComponentInChildren<UnitInfo>().level = data.level;
@@ -156,6 +157,7 @@ public class Tower : MonoBehaviour
                 temp = new TowerInfor();
                 temp.tag = parent.tag;
                 temp.level = 1;
+                temp.name = newTower.name;
                 DataManager.instance.progress.towerInfors.Add(temp);
             }
             else
