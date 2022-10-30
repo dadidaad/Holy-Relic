@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7900305966681868683}
   - component: {fileID: 4152414638288561205}
-  - component: {fileID: 4912960135636421688}
-  - component: {fileID: 2071370383292962315}
   - component: {fileID: 1339006404228384679}
+  - component: {fileID: 2071370383292962315}
+  - component: {fileID: 4912960135636421688}
   m_Layer: 11
   m_Name: SlowBullet
   m_TagString: Bullet
@@ -85,6 +85,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1339006404228384679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58a4fa98c002324d9d4f7502482118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
+  speed: 2
+  speedUpOverTime: 0.2
+  hitDistance: 0.1
+  ballisticOffset: 0.4
+  freezeRotation: 1
+  aoeDamageOnly: 1
+  animEffect: {fileID: 312923080221798340, guid: 55604e365ded6144c8d4c9856a886dc2, type: 3}
+--- !u!114 &2071370383292962315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532996538095813643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b639930923e654c870f141427641da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aoeDamageRate: 2
+  radius: 0.3
+  explosion: {fileID: 0}
+  explosionDuration: 1
+  sfx: {fileID: 0}
+  tags:
+  - Flying
+  - Enemies
 --- !u!114 &4912960135636421688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,43 +147,3 @@ MonoBehaviour:
   sfx: {fileID: 0}
   tags:
   - Enemies
---- !u!114 &2071370383292962315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532996538095813643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17b639930923e654c870f141427641da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aoeDamageRate: 2
-  radius: 0.3
-  explosion: {fileID: 0}
-  explosionDuration: 1
-  sfx: {fileID: 0}
-  tags:
-  - Flying
-  - Enemies
---- !u!114 &1339006404228384679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532996538095813643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58a4fa98c002324d9d4f7502482118e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 5
-  speed: 2
-  speedUpOverTime: 0.2
-  hitDistance: 0.1
-  ballisticOffset: 0.4
-  freezeRotation: 1
-  aoeDamageOnly: 1
-  animEffect: {fileID: 312923080221798340, guid: 55604e365ded6144c8d4c9856a886dc2, type: 3}
