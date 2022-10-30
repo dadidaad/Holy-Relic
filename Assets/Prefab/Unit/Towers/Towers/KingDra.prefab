@@ -255,6 +255,7 @@ MonoBehaviour:
   primaryText: 
   secondaryIcon: {fileID: 0}
   secondaryText: 
+  level: 1
   bulletArrows:
   - {fileID: 8642144952929877573, guid: 0ad3275af81e66548b30b8a0dfb76f0a, type: 3}
 --- !u!1 &4141056418597072169
@@ -350,7 +351,6 @@ MonoBehaviour:
   enabledIcon: {fileID: 7733301210026866619}
   towerPrefab: {fileID: 5253704690272930596}
   disableOb: {fileID: 960475110445969748}
-  level: 1
 --- !u!1 &5140304040770308758
 GameObject:
   m_ObjectHideFlags: 0

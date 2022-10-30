@@ -25,6 +25,9 @@ public class BulletArrow : MonoBehaviour, IBullet
     // This bullet don't deal damage to single target. Only AOE damage if it is
     public bool aoeDamageOnly = false;
 
+    //Animation effect crash
+    public GameObject animEffect;
+
     // From this position bullet was fired
     private Vector2 originPoint;
     // Aimed target
@@ -115,44 +118,13 @@ public class BulletArrow : MonoBehaviour, IBullet
                     }
                 }
             }
-            //Animator anim = GetComponent<Animator>();
-            //if (anim != null && anim.runtimeAnimatorController != null)
-            //{
-            //    // Search for clip
-            //    foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
-            //    {
-            //        if (clip.name == "Crash")
-            //        {
-            //            // Play animation
-            //            anim.SetTrigger("crash");
-            //        }
-            //    }
-            //}
-            StartCoroutine(DieCoroutine());
+           
+           //destroy
+           Instantiate(animEffect,transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 
-    private IEnumerator DieCoroutine()
-    {
-        Animator anim = GetComponentInChildren<Animator>();
-        // If unit has animator
-        if (anim != null && anim.runtimeAnimatorController != null)
-        {
-            // Search for clip
-            foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
-            {
-                if (clip.name == "Crash")
-                {
-                    // Play animation
-                    anim.SetTrigger("crash");
-                    yield return new WaitForSeconds(clip.length);
-                    break;
-                }
-            }
-        }
-        yield return true;
-        Destroy(gameObject);
-    }
 
     /// <summary>
     /// Looks at direction2d.
