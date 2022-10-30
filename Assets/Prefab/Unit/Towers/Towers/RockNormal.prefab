@@ -558,6 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions: {fileID: 5316683673305451438}
   range: {fileID: 0}
+  prefabsTower: []
 --- !u!1 &5316683673305451438
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c559f84510bc87e469a0396dfbd6a13e, type: 3}
+  m_Sprite: {fileID: 7115820660799020687, guid: 49d852142de51d6429d004c10d985acb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2896936807900356125}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2.45, y: 0.89, z: 0}
+  m_LocalPosition: {x: 0, y: 0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5230169728031704893}
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enabledIcon: {fileID: 7733301210026866619}
   towerPrefab: {fileID: 5253704690272930596}
-  disableOb: {fileID: 0}
+  disableOb: {fileID: 960475110445969748}
 --- !u!1 &5140304040770308758
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions: {fileID: 5316683673305451438}
   range: {fileID: 0}
+  prefabsTower: []
 --- !u!1 &5316683673305451438
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c559f84510bc87e469a0396dfbd6a13e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b0d5859925c83749be4ae1ff862c244, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
