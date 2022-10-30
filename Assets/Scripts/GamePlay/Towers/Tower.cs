@@ -14,7 +14,6 @@ public class Tower : MonoBehaviour
 
     // User interface manager
     private UIManager uiManager;
-    private int level;
 
     /// <summary>
     /// Raises the enable event.
@@ -82,6 +81,9 @@ public class Tower : MonoBehaviour
             newTower.name = towerPrefab.name;
             newTower.transform.position = transform.position;
             newTower.transform.rotation = transform.rotation;
+            UnitInfo unit = newTower.GetComponentInChildren<UnitInfo>();
+            AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
+            ar.damage = (int)Mathf.Floor((ar.damage * 2 * 1) / 5) + 2;
             // Destroy old tower
             Destroy(gameObject);
             EventManager.InvokeEvent("TowerBuild", newTower, null);
@@ -92,24 +94,24 @@ public class Tower : MonoBehaviour
     /// Upgrade the tower.
     /// </summary>
     /// <param name="towerPrefab">Tower prefab.</param>
-    public void UpgradeTower(GameObject towerPrefab, int level)
+    public void UpgradeTower(GameObject towerPrefab, int level, int updatePrice)
     {
         // Close active actions tree
         CloseActions();
-        Price price = towerPrefab.GetComponent<Price>();
+        //Price price = towerPrefab.GetComponent<Price>();
         // If anough gold
-        if (uiManager.SpendGold(price.price) == true)
+        if (uiManager.SpendGold(updatePrice) == true)
         {
             // Create new tower and place it on same position
             GameObject newTower = Instantiate<GameObject>(towerPrefab, transform.parent);
             newTower.name = towerPrefab.name;
             newTower.transform.position = transform.position;
             newTower.transform.rotation = transform.rotation;
-            newTower.GetComponent<Tower>().level = level;
-            Debug.Log(newTower.GetComponent<Tower>().level);
+            level += 1;
+            newTower.GetComponentInChildren<UnitInfo>().level = level;
             
             AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
-            ar.damage += (level * 3);
+            ar.damage = (int)Mathf.Floor((ar.damage * 2* level) / 5) + 2;
             // Destroy old tower
             Destroy(gameObject);
             EventManager.InvokeEvent("UpgradeBuild", newTower, null);

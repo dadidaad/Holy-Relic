@@ -11,7 +11,7 @@ public class UnitInfo : MonoBehaviour
     public string secondaryText;
 
     [HideInInspector]
-    public decimal level = 1;
+    public int level = 1;
 
 
     //For Tower

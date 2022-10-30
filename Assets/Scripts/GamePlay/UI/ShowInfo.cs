@@ -62,11 +62,13 @@ public class ShowInfo : MonoBehaviour
 	{
 		if (info.unitName != "")
 		{
-			unitName.text = info.unitName;
+			int level = obj.GetComponentInChildren<UnitInfo>().level;
+			unitName.text = info.unitName + "-" + level.ToString();
 		}
 		else
 		{
-			unitName.text = obj.name;
+			int level = obj.GetComponentInChildren<UnitInfo>().level;
+			unitName.text = obj.name + "-" + level.ToString();
 		}
 
 		if (info.primaryIcon != null || info.secondaryIcon != null || info.primaryText != "" || info.secondaryText != "")
