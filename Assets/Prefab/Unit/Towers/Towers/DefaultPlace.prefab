@@ -591,7 +591,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions: {fileID: 4537546684160740541}
   range: {fileID: 0}
-  prefabsTower: []
+  prefabsTower:
+  - {fileID: 5253704690272930596, guid: 5704f9e0915b4fc49a14c0a2c67537f2, type: 3}
+  - {fileID: 5253704690272930596, guid: 737f7d7844c5f00479b33642e7fb99f5, type: 3}
+  - {fileID: 5253704690272930596, guid: 1adf69debdde83f4c82cd0a59408e729, type: 3}
 --- !u!1 &4537546684430653330
 GameObject:
   m_ObjectHideFlags: 0
