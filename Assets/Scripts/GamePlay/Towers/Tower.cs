@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 /// <summary>
 /// Tower building and operation.
 /// </summary>
@@ -12,9 +12,10 @@ public class Tower : MonoBehaviour
     // Visualisation of attack or defend range for this tower
     public GameObject range;
 
+    public List<GameObject> prefabsTower;
+
     // User interface manager
     private UIManager uiManager;
-
     /// <summary>
     /// Raises the enable event.
     /// </summary>
@@ -23,6 +24,7 @@ public class Tower : MonoBehaviour
         EventManager.StartListening("GamePaused", GamePaused);
         EventManager.StartListening("UserClick", UserClick);
         EventManager.StartListening("UserUiClick", UserClick);
+        
     }
 
     /// <summary>
@@ -76,17 +78,50 @@ public class Tower : MonoBehaviour
         // If anough gold
         if (uiManager.SpendGold(price.price) == true)
         {
+            
             // Create new tower and place it on same position
             GameObject newTower = Instantiate<GameObject>(towerPrefab, transform.parent);
             newTower.name = towerPrefab.name;
             newTower.transform.position = transform.position;
             newTower.transform.rotation = transform.rotation;
+           
             UnitInfo unit = newTower.GetComponentInChildren<UnitInfo>();
             AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
             ar.damage = (int)Mathf.Floor((ar.damage * 2 * 1) / 5) + 2;
-            // Destroy old tower
+
+            GameObject parent = transform.parent.gameObject;
+            var temp = DataManager.instance.progress.towerInfors.FirstOrDefault(e => e.tag == parent.tag);
+            if (temp == null)
+            {
+                temp = new TowerInfor();
+                temp.tag = parent.tag;
+                temp.level = 1;
+                DataManager.instance.progress.towerInfors.Add(temp);
+            }
+            newTower.tag = parent.tag;
+           // Destroy old tower
             Destroy(gameObject);
             EventManager.InvokeEvent("TowerBuild", newTower, null);
+
+           
+        }
+    }
+    public void LoadSaveTower(string preFab)
+    {
+        
+        GameObject parent = transform.parent.gameObject;
+        var data = DataManager.instance.progress.towerInfors.FirstOrDefault(e => e.tag == parent.tag);
+        if (data != null)
+        {
+            GameObject newTower = Instantiate<GameObject>(prefabsTower.FirstOrDefault(e => e.name == preFab), transform.parent);
+            newTower.name = prefabsTower.FirstOrDefault(e => e.name == "KingDra").name;
+            newTower.transform.position = transform.position;
+            newTower.transform.rotation = transform.rotation;
+            newTower.GetComponentInChildren<UnitInfo>().level = data.level;
+            AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
+            ar.damage = (int)Mathf.Floor((ar.damage * 2 * data.level) / 5) + 2;
+            newTower.tag = parent.tag;
+            Destroy(gameObject);
         }
     }
 
@@ -114,6 +149,20 @@ public class Tower : MonoBehaviour
             ar.damage = (int)Mathf.Floor((ar.damage * 2* level) / 5) + 2;
             // Destroy old tower
             Destroy(gameObject);
+            GameObject parent = transform.parent.gameObject;
+            var temp = DataManager.instance.progress.towerInfors.FirstOrDefault(e => e.tag == parent.tag);
+            if (temp == null)
+            {
+                temp = new TowerInfor();
+                temp.tag = parent.tag;
+                temp.level = 1;
+                DataManager.instance.progress.towerInfors.Add(temp);
+            }
+            else
+            {
+                temp.level = level;
+            }
+            newTower.tag = parent.tag;
             EventManager.InvokeEvent("UpgradeBuild", newTower, null);
         }
     }
@@ -141,6 +190,9 @@ public class Tower : MonoBehaviour
         newTower.name = emptyPlacePrefab.name;
         newTower.transform.position = transform.position;
         newTower.transform.rotation = transform.rotation;
+        GameObject parent = transform.parent.gameObject;
+        var temp = DataManager.instance.progress.towerInfors.FirstOrDefault(e => e.tag == parent.tag);
+        DataManager.instance.progress.towerInfors.Remove(temp);
         // Destroy old tower
         Destroy(gameObject);
         EventManager.InvokeEvent("TowerSell", null, null);

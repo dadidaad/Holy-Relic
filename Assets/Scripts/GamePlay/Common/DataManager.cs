@@ -14,6 +14,12 @@ public class DataVersion
 	public int major = 1;
 	public int minor = 0;
 }
+[Serializable]
+public class TowerInfor
+{
+	public string tag;
+	public int level;
+}
 
 /// <summary>
 /// Format of stored game progress data.
@@ -24,6 +30,11 @@ public class GameProgressData
 	public System.DateTime saveTime = DateTime.MinValue;    // Saving time
 	public int currentWave;
 	public int enemiesInWave;
+	public string defeatAttempts="";
+	public string gold="";
+
+	public List<TowerInfor> towerInfors = new List<TowerInfor>();
+
 }
 
 /// <summary>
@@ -134,6 +145,9 @@ public class DataManager : MonoBehaviour
 		BinaryFormatter bf = new BinaryFormatter();
 		FileStream file = File.Create(Application.persistentDataPath + gameProgressFile);
 		progress.saveTime = DateTime.Now;
+		UIManager uiManager = FindObjectOfType<UIManager>();
+		progress.defeatAttempts = uiManager.defeatAttempts.text;
+		progress.gold = uiManager.goldAmount.text;
 		bf.Serialize(file, progress);
 		file.Close();
 	}
