@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45b3b71b407e3f545ab295563b36dbec
+guid: 608ba32e8fbc9214b832a72f1f921da8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Madera TYGRA
+  - Batuphat Script
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

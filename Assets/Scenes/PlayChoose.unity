@@ -1332,13 +1332,65 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1002473142}
     m_Modifications:
+    - target: {fileID: 2224037571983492833, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 608ba32e8fbc9214b832a72f1f921da8, type: 3}
+    - target: {fileID: 2224037571983492833, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224037571983492833, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2760551418068685707, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2393422d2426162428aa3910419118a9, type: 3}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.23879698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.19752577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 608ba32e8fbc9214b832a72f1f921da8, type: 3}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_RichText
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954542127758160000, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3217108486494124667, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
       propertyPath: m_Name
       value: ProgressInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765671840362389424, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 608ba32e8fbc9214b832a72f1f921da8, type: 3}
+    - target: {fileID: 7765671840362389424, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7867644999042411535, guid: 666656caa6583b847b7b9d225281d81e, type: 3}
       propertyPath: m_Pivot.x
