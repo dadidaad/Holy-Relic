@@ -120,7 +120,7 @@ public class SpawnPoint : MonoBehaviour
                     // Wait for delay before next enemy run
                     yield return new WaitForSeconds(unitSpawnDelay);
                 }
-                if (currentWave % 3 == 0)
+                if (currentWave % 4 == 0)
                     enemyInWave += 1;
             }
         }

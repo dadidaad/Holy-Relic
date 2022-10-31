@@ -118,10 +118,11 @@ public class BulletArrow : MonoBehaviour, IBullet
                     }
                 }
             }
-           
-           //destroy
-           Instantiate(animEffect,transform.position, transform.rotation);
-           Destroy(gameObject);
+
+            //destroy
+            GameObject anim = Instantiate(animEffect, transform.position, transform.rotation);
+            Destroy(anim, 2);
+            Destroy(gameObject);
         }
     }
 
