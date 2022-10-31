@@ -210,4 +210,23 @@ public class Effect : MonoBehaviour
 				break;
 		}
 	}
+    /// <summary>
+    /// Speed effect handler (float).
+    /// </summary>
+    /// <param name="trigger">Trigger.</param>
+    /// <param name="modifier">Modifier (can not be 0f).</param>
+    private void Turn(EffectTrigger trigger, float modifier)
+    {
+        NavAgent navAgent = GetComponent<NavAgent>();
+        switch (trigger)
+        {
+            case EffectTrigger.Added:
+            case EffectTrigger.NewModifier:
+                navAgent.speed *= 1 + modifier;
+                break;
+            case EffectTrigger.ModifierExpired:
+                navAgent.speed /= 1 + modifier;
+                break;
+        }
+    }
 }

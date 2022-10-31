@@ -1322,5 +1322,5 @@ MonoBehaviour:
   damage: 2
   cooldown: 1
   fireDelay: 0
-  arrowPrefab: {fileID: 847933439783408654, guid: 0ad3275af81e66548b30b8a0dfb76f0a, type: 3}
+  arrowPrefab: {fileID: 532996538095813643, guid: 4a57bc1637cfb144fbde2b9983ac161a, type: 3}
   firePoint: {fileID: 4437689030658454952}

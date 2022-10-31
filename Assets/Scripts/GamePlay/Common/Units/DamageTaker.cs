@@ -26,7 +26,8 @@ public class DamageTaker : MonoBehaviour
 	// Visualisation of hit or heal is in progress
 	private bool coroutineInProgress;
 	// Original width of health bar (full hp)
-	private float originHealthBarWidth;
+	[HideInInspector]
+	public float originHealthBarWidth;
 
 	[HideInInspector]
 	public float halfPoint;
