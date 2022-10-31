@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Stun
   modifier: 1
-  duration: 2.5
+  duration: 0.25
   radius: 1
   explosionFx: {fileID: 0}
   explosionFxDuration: 1

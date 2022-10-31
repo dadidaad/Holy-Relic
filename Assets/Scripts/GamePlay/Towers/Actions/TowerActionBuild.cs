@@ -32,7 +32,7 @@ public class TowerActionBuild : TowerAction
 		priceText = GetComponentInChildren<Text>();
 		levelManager = FindObjectOfType<LevelManager>();
 		uiManager = FindObjectOfType<UIManager>();
-		Debug.Assert(priceText && towerPrefab && enabledIcon && disabledIcon && levelManager && uiManager, "Wrong initial parameters");
+/*		Debug.Assert(priceText && towerPrefab && enabledIcon && disabledIcon && levelManager && uiManager, "Wrong initial parameters");*/
 		// Display tower price
 		price = towerPrefab.GetComponent<Price>().price;
 		priceText.text = price.ToString();
