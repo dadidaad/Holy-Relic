@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1562485295051045432}
   m_Layer: 8
   m_Name: Features
-  m_TagString: Revise
+  m_TagString: SelfFreeHarm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfFreeHarm: {fileID: 7277689410633239529}
-  timeSelfFreeHarm: 3
+  timeSelfFreeHarm: 5
 --- !u!1 &2875658374316912076
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,8 +115,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2875658374316912076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.238, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.022, y: 0.252, z: 0}
+  m_LocalScale: {x: 1.7, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 8616179553606419115}
   m_RootOrder: 1
@@ -162,7 +162,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d3757e07a1f084b4cae57757f1367d35, type: 3}
-  m_Color: {r: 0, g: 0.0069833226, b: 0.6698113, a: 1}
+  m_Color: {r: 1, g: 0.042163055, b: 0.013207495, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583d78a97c8420546b6b3aac663fdeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.9
   move: 1
   turn: 1
   destination: {x: 0, y: 0}
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 8
+  hitpoints: 5
   currentHitpoints: 0
   damageDisplayTime: 0.4
   healthBar: {fileID: 7684050507494629941}
@@ -515,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7478022508535666420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.014, y: -0.061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8616179553606419115}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5287884196954996440}
   m_Layer: 8
   m_Name: Feature
-  m_TagString: BuffSpeed
+  m_TagString: Sacrifice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ Transform:
   m_GameObject: {fileID: 1501322256230398818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.482, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 8811763291055437746}
   m_RootOrder: 1
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d3757e07a1f084b4cae57757f1367d35, type: 3}
-  m_Color: {r: 0, g: 0.065496445, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.009047508, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -210,12 +210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5880e027f70c5024792941333790fcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedAmount: 0.025
+  speedAmount: 0.2
   cooldown: 1
   healVisualPrefab: {fileID: 0}
   healVisualDuration: 1
   buffScrac: {fileID: 8953099516059627349}
-  tags: []
+  tags:
+  - Enemies
+  - Flying
 --- !u!1 &3411347107559216016
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +445,7 @@ GameObject:
   - component: {fileID: 9089140663609897869}
   - component: {fileID: 4563943676789299456}
   - component: {fileID: 887360921178506009}
+  - component: {fileID: 6890790771814014116}
   m_Layer: 8
   m_Name: SacrificeBuff
   m_TagString: Enemies
@@ -459,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 8953099516059627349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_Children:
   - {fileID: 99781847417328115}
   - {fileID: 2644464983080521882}
@@ -531,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583d78a97c8420546b6b3aac663fdeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.4
+  speed: 0.5
   move: 1
   turn: 1
   destination: {x: 0, y: 0}
@@ -596,3 +599,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
   defaultState: {fileID: 9089140663609897869}
+--- !u!114 &6890790771814014116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953099516059627349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f5329df55e3764e9a75a440eb28d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  price: 10
