@@ -4464,7 +4464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUiSceneName: LevelUI
-  goldAmount: 50
+  goldAmount: 25
   defeatAttempts: 50
   allowedEnemies:
   - {fileID: 7277689410633239529, guid: 016367b852589b74988146954f1f2509, type: 3}

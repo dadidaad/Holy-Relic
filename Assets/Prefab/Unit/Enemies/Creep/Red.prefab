@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 8
+  hitpoints: 10
   currentHitpoints: 0
   damageDisplayTime: 0.4
   healthBar: {fileID: 2644464983080521882}
@@ -610,4 +610,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f5329df55e3764e9a75a440eb28d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 7
+  price: 4

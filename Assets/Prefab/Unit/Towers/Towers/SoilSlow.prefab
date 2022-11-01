@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb677e5802056b488e14c99bcc1b8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
   cooldown: 2
   fireDelay: 0
   arrowPrefab: {fileID: 532996538095813643, guid: 8b8cf58ff04c9f54dbe31dc91a175cf1, type: 3}

@@ -16,7 +16,7 @@ public class PlayChoose : MonoBehaviour
 	public List<GameObject> levelsPrefabs = new List<GameObject>();
 
 	// Index of last allowed level for choosing
-	private int maxActiveLevelIdx;
+/*	private int maxActiveLevelIdx;*/
 	// Index of current displayed level
 	private int currentDisplayedLevelIdx;
 
@@ -32,7 +32,7 @@ public class PlayChoose : MonoBehaviour
 
 	void Awake()
 	{
-		maxActiveLevelIdx = -1;
+/*		maxActiveLevelIdx = -1;*/
 		Debug.Assert(currentLevel &&  levelFolder, "Wrong initial settings");
 	}
 

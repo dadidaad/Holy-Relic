@@ -231,7 +231,7 @@ public class SpawnPoint : MonoBehaviour
         {
             return randomEnemiesList[8];
         }
-        else if(currentWave % 1 == 0 && currentWave > 0 && GameObject.FindGameObjectsWithTag("Sacrifice").Length < 3)
+        else if (currentWave % 6 == 0 && currentWave > 5 && GameObject.FindGameObjectsWithTag("Sacrifice").Length < 2)
         {
             return randomEnemiesList[7];
         }

@@ -72,7 +72,7 @@ Transform:
   m_GameObject: {fileID: 1501322256230398818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.482, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2.5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 8811763291055437746}
   m_RootOrder: 1
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583d78a97c8420546b6b3aac663fdeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.2
   move: 1
   turn: 1
   destination: {x: 0, y: 0}
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 14
+  hitpoints: 20
   currentHitpoints: 0
   damageDisplayTime: 0.8
   healthBar: {fileID: 2644464983080521882}
@@ -611,4 +611,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f5329df55e3764e9a75a440eb28d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 10
+  price: 4

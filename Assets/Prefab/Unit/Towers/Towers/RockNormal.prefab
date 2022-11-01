@@ -1320,8 +1320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb677e5802056b488e14c99bcc1b8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  cooldown: 0.75
+  damage: 2
+  cooldown: 0.6
   fireDelay: 0
   arrowPrefab: {fileID: 847933439783408654, guid: 0ad3275af81e66548b30b8a0dfb76f0a, type: 3}
   firePoint: {fileID: 4437689030658454952}
