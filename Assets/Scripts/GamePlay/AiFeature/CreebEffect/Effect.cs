@@ -212,9 +212,11 @@ public class Effect : MonoBehaviour
         {
             case EffectTrigger.Added:
             case EffectTrigger.NewModifier:
+				if(navAgent.speed > 0)
                 navAgent.speed *= 1 + modifier;
                 break;
             case EffectTrigger.ModifierExpired:
+                if (navAgent.speed < 0)
                 navAgent.speed /= 1 + modifier;
                 break;
         }
