@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f5329df55e3764e9a75a440eb28d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 35
+  price: 40
 --- !u!114 &6237157564252507410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,10 +1285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb677e5802056b488e14c99bcc1b8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 3
   cooldown: 1.5
   fireDelay: 0
-  arrowPrefab: {fileID: 532996538095813643, guid: 4ab51a865b791c24fafead5df983b952, type: 3}
+  arrowPrefab: {fileID: 532996538095813643, guid: 4a57bc1637cfb144fbde2b9983ac161a, type: 3}
   firePoint: {fileID: 4437689030658454952}
 --- !u!114 &5203931699138519729
 MonoBehaviour:
