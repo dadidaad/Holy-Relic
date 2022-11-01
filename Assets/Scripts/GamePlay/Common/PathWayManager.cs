@@ -34,21 +34,21 @@ public class PathWayManager : MonoBehaviour
             spawnPoint2.WaveStart(this.gameObject, "continue");
             flag2 = true;
         }
-        if (DataManager.instance.progress.currentWave >= 7 && !flag3)
+        if (DataManager.instance.progress.currentWave >= 10 && !flag3)
         {
             Pathway path3 = paths.FirstOrDefault(e => e.name == "Pathway (3)");
             SpawnPoint spawnPoint3 = path3.GetComponentInChildren<SpawnPoint>();
             spawnPoint3.WaveStart(this.gameObject, "continue");
             flag3 = true;
         }
-        if (DataManager.instance.progress.currentWave >= 9 && !flag4)
+        if (DataManager.instance.progress.currentWave >= 20 && !flag4)
         {
             Pathway path4 = paths.FirstOrDefault(e => e.name == "Pathway (4)");
             SpawnPoint spawnPoint4 = path4.GetComponentInChildren<SpawnPoint>();
             spawnPoint4.WaveStart(this.gameObject, "continue");
             flag4 = true;
         }
-        if (DataManager.instance.progress.currentWave >= 12 && !flag5)
+        if (DataManager.instance.progress.currentWave >= 25 && !flag5)
         {
             Pathway path5 = paths.FirstOrDefault(e => e.name == "Pathway (5)");
             SpawnPoint spawnPoint5 = path5.GetComponentInChildren<SpawnPoint>();

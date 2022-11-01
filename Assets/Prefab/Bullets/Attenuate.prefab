@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectName: Attenuate
-  modifier: 0.2
+  modifier: 0.1
   duration: 0.1
   radius: 2
   explosionFx: {fileID: 0}

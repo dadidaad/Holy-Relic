@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 690333088385023914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 5096322940910653477}
   m_RootOrder: 0
@@ -297,7 +297,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00000024478376, y: 1.4}
   m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.1}
 --- !u!222 &7427081619195049183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f5329df55e3764e9a75a440eb28d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 5
+  price: 35
 --- !u!114 &6237157564252507410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5096322940910653477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -716,7 +716,7 @@ RectTransform:
   m_AnchorMin: {x: 0.1, y: 0}
   m_AnchorMax: {x: 0.9, y: 0}
   m_AnchoredPosition: {x: 0.0000115037, y: -0.16}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0.49999997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6890870927609145808
 CanvasRenderer:
@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb677e5802056b488e14c99bcc1b8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
-  cooldown: 2
+  damage: 4
+  cooldown: 1.5
   fireDelay: 0
   arrowPrefab: {fileID: 532996538095813643, guid: 4ab51a865b791c24fafead5df983b952, type: 3}
   firePoint: {fileID: 4437689030658454952}
