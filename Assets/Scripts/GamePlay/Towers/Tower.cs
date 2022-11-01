@@ -147,7 +147,19 @@ public class Tower : MonoBehaviour
             newTower.GetComponentInChildren<UnitInfo>().level = level;
             
             AttackRanged ar = newTower.GetComponentInChildren<AttackRanged>();
-            ar.damage = (int)Mathf.Floor((ar.damage * 2* level) / 5) + 2;
+            if (level < 7)
+            {
+                ar.damage = (int)Mathf.Floor((ar.damage * 2 * level) / 5) + 2;
+            }
+            else if (level < 10)
+            {
+                ar.damage = (int)Mathf.Floor(ar.damage * 3 / 2) + 2;
+            }
+            else
+            {
+                ar.damage = (int)Mathf.Floor(ar.damage) + 200;
+            }
+            
             // Destroy old tower
             Destroy(gameObject);
             GameObject parent = transform.parent.gameObject;

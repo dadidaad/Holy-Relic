@@ -76,8 +76,9 @@ public class SpawnPoint : MonoBehaviour
                     DataManager.instance.progress.enemiesInWave = enemyInWave;
                     uiManager.setWaveText(currentWave);
                 }
-                
-                Debug.Log("Wave: " + currentWave + " - Enemy: " + enemyInWave * 2);
+
+                yield return new WaitForSeconds(5);
+                Debug.Log("Wave: " + currentWave + " - Enemy: " + enemyInWave);
                 int random = Random.Range(0, 3);
                 for (int i = 0; i < enemyInWave; i++)
                 {

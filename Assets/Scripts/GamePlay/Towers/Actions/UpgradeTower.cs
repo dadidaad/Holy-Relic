@@ -32,7 +32,7 @@ public class UpgradeTower : TowerAction
         uiManager = FindObjectOfType<UIManager>();
 
         price = towerPrefab.GetComponent<Price>().price;
-        priceText.text =(level * price).ToString();
+        priceText.text = (level * price).ToString();
 
 
         enabledIcon.SetActive(true);  

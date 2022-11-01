@@ -56,7 +56,7 @@ public class TowerActionBuild : TowerAction
 		// Mask build icon wich blocking icon if player has not anough gold
 		if (enabledIcon == true && blockedIcon != null)
 		{
-			if (true)
+			if (uiManager.GetGold() >= price)
 			{
 				blockedIcon.SetActive(false);
 			}

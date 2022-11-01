@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enabledIcon: {fileID: 7438492815190055112}
-  emptyPlacePrefab: {fileID: 4537546684278294733, guid: 5d98341bae3e375459afabaefbd146ac, type: 3}
+  emptyPlacePrefab: {fileID: 5121603150734758131, guid: a58034490714f0642b5c90ed3d5cc3b2, type: 3}
 --- !u!1 &9008236832870997913
 GameObject:
   m_ObjectHideFlags: 0

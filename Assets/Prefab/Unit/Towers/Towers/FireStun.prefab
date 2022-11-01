@@ -1303,5 +1303,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - Flying
   - Enemies
