@@ -1307,6 +1307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Enemies
+  - Flying
 --- !u!114 &2887473110866354041
 MonoBehaviour:
   m_ObjectHideFlags: 0

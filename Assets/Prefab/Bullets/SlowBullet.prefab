@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Speed
   modifier: -0.5
-  duration: 2.5
-  radius: 0.5
+  duration: 1.5
+  radius: 1.25
   explosionFx: {fileID: 0}
   explosionFxDuration: 1
   effectFx: {fileID: 0}
