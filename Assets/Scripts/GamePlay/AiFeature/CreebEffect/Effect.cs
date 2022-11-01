@@ -229,4 +229,22 @@ public class Effect : MonoBehaviour
                 break;
         }
     }
+    /// <summary>
+    /// Speed effect handler (float).
+    /// </summary>
+    /// <param name="trigger">Trigger.</param>
+    /// <param name="modifier">Modifier (can not be 0f).</param>
+    private void Attenuate(EffectTrigger trigger, float modifier)
+    {
+        DamageTaker damageTaker = GetComponent<DamageTaker>();
+        switch (trigger)
+        {
+            case EffectTrigger.Added:
+            case EffectTrigger.NewModifier:
+				//print("Before:"+ damageTaker.currentHitpoints);
+                damageTaker.currentHitpoints -= (int)(damageTaker.currentHitpoints * modifier);
+                //print("After:"+ damageTaker.currentHitpoints);
+                break;
+        }
+    }
 }

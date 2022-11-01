@@ -4447,7 +4447,7 @@ MonoBehaviour:
   goldAmount: 25
   defeatAttempts: 50
   allowedEnemies:
-  - {fileID: 7277689410633239529, guid: 016367b852589b74988146954f1f2509, type: 3}
+  - {fileID: 8953099516059627349, guid: 6dc0fe718d9b4274f80367cf77acc3e4, type: 3}
   - {fileID: 7277689410633239529, guid: 80d1173c6d6717b42a4812bdfe7492e9, type: 3}
   - {fileID: 7277689410633239529, guid: cd56c35f3c229334bb938818b04d590a, type: 3}
   - {fileID: 8953099516059627349, guid: 43210c45132af5343ad7dd506b660bf9, type: 3}

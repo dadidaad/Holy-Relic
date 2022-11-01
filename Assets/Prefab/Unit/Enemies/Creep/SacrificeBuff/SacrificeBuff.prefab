@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5880e027f70c5024792941333790fcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedAmount: 0.2
+  speedAmount: 0.025
   cooldown: 1
   healVisualPrefab: {fileID: 0}
   healVisualDuration: 1
@@ -548,9 +548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 30
+  hitpoints: 14
   currentHitpoints: 0
-  damageDisplayTime: 0.4
+  damageDisplayTime: 0.8
   healthBar: {fileID: 2644464983080521882}
   isTrigger: 0
   originHealthBarWidth: 0

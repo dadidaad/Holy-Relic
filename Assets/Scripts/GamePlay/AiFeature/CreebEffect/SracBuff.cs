@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SracBuff : AiFeature
 {
-    // Amount of healed hp
-    public float speedAmount = 0.2f;
+    // Amount of speedAmount more for buff creeb
+    public float speedAmount = 0.025f;
     // Delay between healing
     public float cooldown = 1f;
     // Visual effect for healing
@@ -86,15 +86,14 @@ public class SracBuff : AiFeature
             if(OBuffDameTaken.currentHitpoints < targetDameTaken.currentHitpoints)
             {
                 cooldownCounter = 0f;
-                targetDameTaken.TakeDamage(-targetDameTaken.currentHitpoints / 2);
-                OBuffDameTaken.TakeDamage(targetDameTaken.currentHitpoints / 2);
+                targetSpeed.speed += OBuffSpeed.speed / 2;
+                OBuffSpeed.speed -= OBuffSpeed.speed / 2 + speedAmount;
             }
             else
             {
                 cooldownCounter = 0f;
-                targetSpeed.speed += OBuffSpeed.speed / 2;
-                OBuffSpeed.speed -= OBuffSpeed.speed / 2 + 0.025f;
-                
+                targetDameTaken.TakeDamage(-targetDameTaken.currentHitpoints / 2);
+                OBuffDameTaken.TakeDamage(targetDameTaken.currentHitpoints / 2);
             }
             if (healVisualPrefab != null)
             {

@@ -436,11 +436,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de7b56c2769e414fa31381aaa4c4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 3
+  hitpoints: 30
   currentHitpoints: 0
   damageDisplayTime: 0.2
   healthBar: {fileID: 7684050507494629941}
   isTrigger: 0
+  originHealthBarWidth: 0
   halfPoint: 0
 --- !u!1 &7478022508535666420
 GameObject:
@@ -517,4 +518,5 @@ MonoBehaviour:
   primaryText: 
   secondaryIcon: {fileID: 0}
   secondaryText: 
+  level: 1
   bulletArrows: []
