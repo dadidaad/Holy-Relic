@@ -213,7 +213,7 @@ MonoBehaviour:
   speedAmount: 0.2
   cooldown: 1
   healVisualPrefab: {fileID: 0}
-  healVisualDuration: 1
+  healVisualDuration: 0.0001
   buffScrac: {fileID: 8953099516059627349}
   tags:
   - Enemies
