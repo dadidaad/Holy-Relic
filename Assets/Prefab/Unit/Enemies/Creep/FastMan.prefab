@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 4227740431013316443}
   - component: {fileID: -7745577056579007025}
   m_Layer: 8
-  m_Name: FastBat
+  m_Name: FastMan
   m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

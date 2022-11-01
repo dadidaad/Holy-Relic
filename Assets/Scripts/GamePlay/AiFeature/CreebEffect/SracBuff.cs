@@ -85,9 +85,15 @@ public class SracBuff : AiFeature
             //Buff HP < target HP
             if(OBuffDameTaken.currentHitpoints < targetDameTaken.currentHitpoints)
             {
-                cooldownCounter = 0f;
-                targetSpeed.speed += OBuffSpeed.speed / 2;
-                OBuffSpeed.speed -= OBuffSpeed.speed / 2 + speedAmount;
+                if (targetSpeed.speed > 0)
+                {
+                    cooldownCounter = 0f;
+                    targetSpeed.speed += OBuffSpeed.speed / 2;
+                    OBuffSpeed.speed -= OBuffSpeed.speed / 2 + speedAmount;
+
+                }
+                else OBuffSpeed.speed = 0.7f;
+
             }
             else
             {
