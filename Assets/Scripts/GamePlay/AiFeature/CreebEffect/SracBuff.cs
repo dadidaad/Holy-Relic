@@ -88,14 +88,14 @@ public class SracBuff : AiFeature
                 if (OBuffSpeed.speed > 0.7f)
                 {
                     cooldownCounter = 0f;
-                    targetSpeed.speed += OBuffSpeed.speed / 2;
-                    OBuffSpeed.speed -= OBuffSpeed.speed / 2;
+                    targetSpeed.speed += OBuffSpeed.speed / 5;
+                    OBuffSpeed.speed -= OBuffSpeed.speed / 5;
 
                 }
                 else
                 {
                     OBuffSpeed.speed = 0.7f;
-                    print("Default:" + OBuffSpeed.speed);
+                   //print("Default:" + OBuffSpeed.speed);
                 }
                    
 
