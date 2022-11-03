@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
 	public string startSceneName;
 	// Credits menu
 	public GameObject creditsMenu;
+	public GameObject BG;
 
 	/// <summary>
 	/// Raises the enable event.
@@ -51,9 +52,11 @@ public class MainMenu : MonoBehaviour
 				break;
 			case "OpenCredits":
 				creditsMenu.SetActive(true);
+				BG.SetActive(false);
 				break;
 			case "CloseCredits":
 				creditsMenu.SetActive(false);
+				BG.SetActive(true);
 				break;
 		}
 	}
