@@ -140,7 +140,7 @@ MonoBehaviour:
   effectName: Turn
   modifier: -2
   duration: 0.5
-  radius: 0.00001
+  radius: 0.2
   explosionFx: {fileID: 0}
   explosionFxDuration: 1
   effectFx: {fileID: 0}
