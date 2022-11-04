@@ -2136,6 +2136,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3485561570206731863, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 8300000, guid: f9a73dcf902e8454892945b584526e51, type: 3}
+    - target: {fileID: 3485561570206731863, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
       propertyPath: defeat
       value: 
       objectReference: {fileID: 0}

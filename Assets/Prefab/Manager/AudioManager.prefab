@@ -239,13 +239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundSource: {fileID: 6405884752065561233}
   musicSource: {fileID: 5692406996156961032}
-  track: {fileID: 8300000, guid: 91b79610404ed574ab5d3b50637f3a28, type: 3}
-  waveStart: {fileID: 8300000, guid: 1ec9bcbf04db29f4fa94bc29dd60c75e, type: 3}
-  captured: {fileID: 8300000, guid: 24b92d0a787f81740aa5da300d77db29, type: 3}
-  towerClick: {fileID: 8300000, guid: 3262e96246b47ce4ebebe038b1321940, type: 3}
-  unitClick: {fileID: 8300000, guid: 4b50020ed5208ea488bbc63c3b2345c5, type: 3}
-  uiClick: {fileID: 8300000, guid: 4e6587dbcd100b54590f2717aece3472, type: 3}
-  towerBuild: {fileID: 8300000, guid: 505e3167a91b4274cb23f026be8a3abb, type: 3}
-  towerSell: {fileID: 8300000, guid: 5f03df27d5d52ca40887c8ce167a6c25, type: 3}
-  defeat: {fileID: 8300000, guid: 9ca3e7d443b4a4340a4b799cd8e5e35f, type: 3}
-  victory: {fileID: 8300000, guid: bdfb55cf07b92bf49abfe1cda8308604, type: 3}
+  track: {fileID: 8300000, guid: f9a73dcf902e8454892945b584526e51, type: 3}
+  captured: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
+  towerClick: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
+  unitClick: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
+  uiClick: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
+  towerBuild: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
+  towerSell: {fileID: 8300000, guid: bd6d67a9981f6414899733ed6880ea97, type: 3}
