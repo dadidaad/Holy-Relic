@@ -2135,6 +2135,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3485561570206731863, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
+      propertyPath: defeat
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485561570206731863, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
+      propertyPath: victory
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485561570206731863, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
+      propertyPath: waveStart
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4303342180503857866, guid: 743db4d7fb157814c9d36c12289b73e4, type: 3}
       propertyPath: m_Name
       value: AudioManager

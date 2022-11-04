@@ -16,8 +16,6 @@ public class AudioManager : MonoBehaviour
 	public AudioSource musicSource;
 	// Soundtrack
 	public AudioClip track;
-	// Wave start sfx
-	public AudioClip waveStart;
 	// Enemy reached capture point sfx
 	public AudioClip captured;
 	// Player click on tower sfx
@@ -30,10 +28,6 @@ public class AudioManager : MonoBehaviour
 	public AudioClip towerBuild;
 	// Tower sell sfx
 	public AudioClip towerSell;
-	// Defeat sfx
-	public AudioClip defeat;
-	// Victory sfx
-	public AudioClip victory;
 
 	// Attack sfx is played now
 	private bool attackCoroutine = false;
@@ -197,10 +191,7 @@ public class AudioManager : MonoBehaviour
 	/// <param name="param">Parameter.</param>
 	private void WaveStart(GameObject obj, string param)
 	{
-		if (waveStart != null)
-		{
-			PlaySound(waveStart);
-		}
+		
 	}
 
 	/// <summary>
@@ -287,10 +278,7 @@ public class AudioManager : MonoBehaviour
 	/// <param name="param">Parameter.</param>
 	private void Defeat(GameObject obj, string param)
 	{
-		if (defeat != null)
-		{
-			PlaySound(defeat);
-		}
+		
 	}
 
 	/// <summary>
@@ -300,9 +288,6 @@ public class AudioManager : MonoBehaviour
 	/// <param name="param">Parameter.</param>
 	private void Victory(GameObject obj, string param)
 	{
-		if (victory != null)
-		{
-			PlaySound(victory);
-		}
+		
 	}
 }
